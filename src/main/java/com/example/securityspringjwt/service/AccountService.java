@@ -60,7 +60,7 @@ public class AccountService implements UserDetailsService {
                     .accessToken(assessToken)
                     .refreshToken(refreshToken)
                     .expiresIn(expiredTime)
-                    .scope("base_info")
+                    .scope("basic_info")
                     .build();
         }else {
             throw new RuntimeException("password is wrong");
